@@ -3,7 +3,7 @@ import React from 'react'
 const Base = ({children}:any) => {
     return ( 
         <React.Fragment>
-            {children}ff
+            {children}
         </React.Fragment>
     );
 }
