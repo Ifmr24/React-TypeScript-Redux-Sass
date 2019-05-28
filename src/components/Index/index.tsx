@@ -1,6 +1,10 @@
-import React from 'react'
+import * as React from 'react'
 
-const Index = () => {
+export interface IndexProps{
+
+}
+
+const Index: React.FC<IndexProps> = (props) => {
     return ( 
         <div>
 
