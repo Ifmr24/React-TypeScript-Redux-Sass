@@ -3,16 +3,19 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import './scss/main.scss';
-// Componentes
+// Componentes, Layouts
 import Index from './components/Index'
+import Base from './layouts/Base';
 
 
 const App: React.FC = () => {
   	return (
 		<Router>
-            <Switch>    
-                <Route exact path="/" component={Index} />
-            </Switch>
+			<Base>
+				<Switch>    
+					<Route exact path="/" component={Index} ></Route>
+				</Switch>
+			</Base>
         </Router>
   	);
 }
