@@ -5,8 +5,8 @@ import {Provider} from 'react-redux';
 import store from './store/store';
 import * as serviceWorker from './serviceWorker';
 
-// Estilos
-import './scss/main.sass';
+// Estilos Globales
+import './scss/main.scss';
 
 ReactDOM.render(
     <Provider store={store}>
