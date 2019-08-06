@@ -1,16 +1,18 @@
 // Modulos
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-//import {useSelector, useDispatch} from 'react-redux';
+import { Router, Route, Switch } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 
-// Componentes, Layouts
+// Containers
 import Index from './containers/Index';
-//import Loader from './components/Loader/Loader';
+
+
+export const history = createHistory();
 
 const App: React.FC = () => {
 
 	return (
-		<Router>
+		<Router history={history}>
 			<Switch>
 				<Route exact path="/">
 					<Route component={Index} />
